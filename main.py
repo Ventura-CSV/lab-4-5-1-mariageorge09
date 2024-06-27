@@ -1,15 +1,15 @@
 import random
-
-
 def main():
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-
-    print(f'The random values are {numbers}')
-    print(f'The total is {total}')
+    id = 0
+    total = 0
+    numbers = [0] * 5
+    while ( id < 5):
+        numbers[id] = random.randint (0, 100)
+        total += numbers[id]
+        id = id + 1
+    print('Output ')
+    print(numbers)
+    print(f'The total sum is {total}')
 
     ########################################
     # Do not delete the return statement
